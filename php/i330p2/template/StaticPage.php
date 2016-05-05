@@ -20,8 +20,7 @@ class StaticPage extends Content{
 	<title>HTTC {$fields[self::FIELD_TITLE]}</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/fm-httc/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
 </head>
 <body>
 
