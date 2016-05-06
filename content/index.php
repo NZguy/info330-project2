@@ -4,7 +4,9 @@ use i330p2\template\StaticPage;
 
 $body = <<<HTML
 
-<div id="nav">
+<button id="hamburger1">&#9776</button>
+<div id="nav" class="close">
+	<button id="hamburger2">&#9776</button>
 	<ul>
 		<li>Profile</li>
 		<li>Events</li>
