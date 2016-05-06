@@ -22,6 +22,7 @@ class StaticPage extends Content{
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/css/main.css" />
 	<script src="/js/main.js" type="text/javascript"></script>
+	<script src="/js/jquery-1.12.3.min.js" type="text/javascript"></script>
 </head>
 <body>
 
