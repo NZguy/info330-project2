@@ -3,6 +3,10 @@ html, body {
 	margin: 0;
 }
 
+#head{
+	overflow: visible;
+}
+
 #nav{
 	background-color: #2b2b2b;
 	padding: 10px 10px;
