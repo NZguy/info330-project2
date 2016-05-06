@@ -4,6 +4,14 @@ use i330p2\template\StaticPage;
 
 $body = <<<HTML
 
+<?php
+for($i = 1; $i <= 6; $i++){
+?>
+    <div class="event"></div>
+<?php
+}
+?>
+
 HTML;
 
 StaticPage::createContent()

@@ -31,3 +31,9 @@ html, body {
 .close{
 	display: none;
 }
+
+.event{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	height: 140px;
+	margin: 20px;
+}

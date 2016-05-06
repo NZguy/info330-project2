@@ -4,6 +4,8 @@ use i330p2\template\StaticPage;
 
 $body = <<<HTML
 
+hi
+
 HTML;
 
 StaticPage::createContent()
