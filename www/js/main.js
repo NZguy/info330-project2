@@ -11,10 +11,12 @@
 
     function openHam(){
         document.getElementById("nav").className = "open";
+        document.getElementById("hamburger1").className = "close";
     }
 
     function closeHam(){
         document.getElementById("nav").className = "close";
+        document.getElementById("hamburger1").className = "open";
     }
 
 }) ();
