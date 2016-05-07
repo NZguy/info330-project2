@@ -20,12 +20,17 @@ class StaticPage extends Content{
 	<title>HTTC {$fields[self::FIELD_TITLE]}</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/main.css" />
-	<script src="/js/main.js" type="text/javascript"></script>
-	<script src="/js/jquery-1.12.3.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="/css/global.css" />
 </head>
 <body>
 
+<div id="global-nav">
+
+</div>
+<div id="global-nav-push"></div>
+<h1>hi ur a noob</h1>
 {$fields[self::FIELD_BODY]}
 
 </body>

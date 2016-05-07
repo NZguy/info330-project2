@@ -1,0 +1,14 @@
+// Contains styles for the global navigation bar
+
+$global-nav-height: 60px;
+#global-nav,
+#global-nav-push {
+	height: $global-nav-height;
+}
+
+#global-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}

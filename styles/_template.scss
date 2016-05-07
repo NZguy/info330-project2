@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'tempo';
+	src: url("https://s3-us-west-1.amazonaws.com/fm-msc/i330/tempostd-heavycondensed-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: normal 34px tempo;
+	text-transform: uppercase;
+}
