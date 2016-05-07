@@ -20,14 +20,15 @@ class StaticPage extends Content{
 	<title>HTTC {$fields[self::FIELD_TITLE]}</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="/css/global.css" />
 </head>
 <body>
 
 <div id="global-nav">
-
+	
 </div>
 <div id="global-nav-push"></div>
 <h1>hi ur a noob</h1>
