@@ -9,7 +9,9 @@ html, body {
   font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font: normal 34px tempo;
+  font-family: tempo, sans-serif;
+  font-weight: normal;
+  font-style: normal;
   text-transform: uppercase; }
 
 #global-nav,
