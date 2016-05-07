@@ -17,7 +17,7 @@ class StaticPage extends Content{
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>HTTC {$fields[self::FIELD_TITLE]}</title>
+	<title>The Title {$fields[self::FIELD_TITLE]}</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -27,11 +27,34 @@ class StaticPage extends Content{
 </head>
 <body>
 
+<input type="checkbox" class="k-controller" id="global-sidebar-controller" checked="checked" />
+<div id="global-sidebar">
+	<div id="global-sidebar-header">
+		<div id="global-sidebar-header-avatar"><img src="https://s3-us-west-1.amazonaws.com/fm-msc/i330/user-avatar.gif" alt="Profile Picture" /></div>
+		<div>
+			<div id="global-sidebar-header-username">adunkman330@ccruises.com</div>
+			<div id="global-sidebar-header-name">Duncan Andrew</div>
+		</div>
+	</div>
+	<ul id="global-sidebar-links">
+		<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="/activities-and-events"><i class="fa fa-users"></i>Activities/Events</a></li>
+		<li><a href="/shipspace"><i class="fa fa-ship"></i>ShipSpace</a></li>
+		<li><a href="/help"><i class="fa fa-exclamation-triangle"></i>Help</a></li>
+		<li><a href="/settings"><i class="fa fa-cog"></i>Settings</a></li>
+	</ul>
+	<div id="global-sidebar-author">
+		Made with love,<br />By Duncan Andrew and Kodlee Yin
+	</div>
+</div>
+<label id="global-sidebar-closer" for="global-sidebar-controller"></label>
+
 <div id="global-nav">
-	
+	<label for="global-sidebar-controller"><i class="fa fa-bars"></i></label>
+	<div>{$fields[self::FIELD_TITLE]}</div>
 </div>
 <div id="global-nav-push"></div>
-<h1>hi ur a noob</h1>
+
 {$fields[self::FIELD_BODY]}
 
 </body>
