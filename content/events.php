@@ -40,54 +40,39 @@ $body = <<<HTML
 	<option>Coming up</option>
 </select>
 	
-<?-- Link should make the categories div appear -->	
-<a href="#">
-	<div id="event-categories-button">
-		<label for="event-categories-controller">Categories</label>
-	</div>
-</a>
+<div id="event-categories-button">
+	<label for="event-categories-controller">Categories</label>
+</div>
 
 <input type="checkbox" id="event-categories-controller" /> 
 
 <div id="event-categories-container">
 	<h2>Categories</h2>
 	<div class="event-category">
+		<input type="radio" name="category" id="event-category-a" checked />
 		<label for="event-category-a">All</label>
-		<input type="radio" name="category" id="event-category-a" class="radioo" />
 	</div>
 	<div class="event-category">
+		<input type="radio" name="category" id="event-category-b" />
 		<label for="event-category-b">Adults</label>
-		<input type="radio" name="category" id="event-category-b" class="radioo" />
 	</div>
 	<div class="event-category">
+		<input type="radio" name="category" id="event-category-c" />
 		<label for="event-category-c">Kids</label>
-		<input type="radio" name="category" id="event-category-c" class="radioo" />
 	</div>
 	<div class="event-category">
+		<input type="radio" name="category" id="event-category-d" />
 		<label for="event-category-d">Singles</label>
-		<input type="radio" name="category" id="event-category-d" class="radioo" />
 	</div>
 	<div class="event-category">
+		<input type="radio" name="category" id="event-category-e" />
 		<label for="event-category-e">Families</label>	
-		<input type="radio" name="category" id="event-category-e" class="radioo" />
 	</div>
 	<div class="event-category">	
+		<input type="radio" name="category" id="event-category-f" />
 		<label for="event-category-f">Everyone</label>
-		<input type="radio" name="category" id="event-category-f" class="radioo" />
 	</div>
 	<div id="event-filter-button">Additional Filters</div>
-	
-	<!--
-	<form id="event-category-radios">
-		<input type="radio" name="category" id="event-category-a" class="radioo" />
-		<input type="radio" name="category" id="event-category-b" class="radioo" />
-		<input type="radio" name="category" id="event-category-c" class="radioo" />
-		<input type="radio" name="category" id="event-category-d" class="radioo" />
-		<input type="radio" name="category" id="event-category-e" class="radioo" />
-		<input type="radio" name="category" id="event-category-f" class="radioo" />
-	</form>
-	-->
-	
 </div>
 
 $eventHtml

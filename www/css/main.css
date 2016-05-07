@@ -65,7 +65,7 @@ body{
 
 #event-categories-container{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-	margin: 20px;
+	margin: 0 20px;
 	clear: both;
 }
 
@@ -80,7 +80,6 @@ body{
 .event-category label{
 	display: block;
 	width: 100%;
-	background-color: white;
 }
 
 #event-filter-button{
@@ -92,11 +91,11 @@ body{
 }
 
 .event-category input[type="radio"]{
-	/* display: none; */
+	display: none;
 }
 
 .event-category input[type="radio"]:checked ~ label{
-	background-color: grey;
+	background-color: #0a407d;;
 	color: white;
 	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
 }
@@ -117,7 +116,7 @@ body{
 	height: 100%;
 }
 
-h2{
+.event-text h2, #event-categories-container h2{
 	font-size: 18px;
 	margin: 5px 0 0 5px;
 	color: #0a407d;
