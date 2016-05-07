@@ -2,35 +2,6 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-#head{
-	overflow: visible;
-}
-
-#nav{
-	background-color: #2b2b2b;
-	padding: 10px 10px;
-	font-size: 20pt;
-	color: white;
-}
-
-#nav ul{
-	margin: 0;
-	list-style: none;
-	padding: 0;
-}
-
-#nav ul li{
-	padding: 10px 0;
-}
-
-.open{
-	display: inline-block;
-}
-
-.close{
-	display: none;
-}
-
 #event-order{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 	margin: 20px;
