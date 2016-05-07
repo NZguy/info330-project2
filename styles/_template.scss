@@ -5,12 +5,20 @@
 	font-style: normal;
 }
 
+@mixin transition($params...) {
+	transition: $params;
+	-webkit-transition: $params;
+}
+
 html, body {
-	padding: 0;
-	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
+html, body,
+ul, ol, li {
+	padding: 0;
+	margin: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	&.global {
@@ -19,4 +27,12 @@ h1, h2, h3, h4, h5, h6 {
 		font-style: normal;
 		text-transform: uppercase;
 	}
+}
+
+.k-controller {
+	display: none;
+}
+
+.k-container {
+	padding: 0 $content-padding;
 }
