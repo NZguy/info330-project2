@@ -10,7 +10,7 @@ for ($i = 1; $i <= 6; $i++) {
                             <img src="http://static.carnivalcloud.com/~/media/Images/explore/onboard/outdoor/skyride-2.ashx" alt="event image"/>
                         </div>
                         <div class="event-text">
-                            <h1>Title</h1>
+                            <h2>Title</h2>
                             <p>Description</p>
                         </div>
                     </div>';
