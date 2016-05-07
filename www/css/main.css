@@ -31,6 +31,32 @@
 
 .event{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-	height: 140px;
+	height: 200px;
 	margin: 20px;
+}
+
+.event-image{
+	overflow: hidden;
+	height: 120px;
+}
+
+.event-image img{
+	height: 100%;
+}
+
+.event-text{
+	/* Need to get open sans */
+	font-family: 'Open Sans', arial;
+}
+
+.event-text h2{
+	font-size: 18px;
+	margin: 5px 0 0 5px;
+	color: #0a407d;
+}
+
+.event-text p{
+	font-size: 14px;
+	margin: 0 0 0 5px;
+	color: #555;
 }
