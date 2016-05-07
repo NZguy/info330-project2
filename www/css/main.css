@@ -1,4 +1,7 @@
-
+body{
+	font-family: 'Open Sans', arial;
+	font-size: 20px;
+}
 
 #head{
 	overflow: visible;
@@ -29,10 +32,28 @@
 	display: none;
 }
 
+#event-order{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	margin: 20px;
+	float: left;
+	font-family: 'Open Sans', arial;
+	font-size: 20px;
+	border: none;
+}
+
+#event-categories{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	margin: 20px;
+	float: right;
+	padding: 1px 4px;
+	width: 116px;
+}
+
 .event{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 	height: 200px;
 	margin: 20px;
+	clear: both;
 }
 
 .event-image{
@@ -45,8 +66,7 @@
 }
 
 .event-text{
-	/* Need to get open sans */
-	font-family: 'Open Sans', arial;
+
 }
 
 .event-text h2{
