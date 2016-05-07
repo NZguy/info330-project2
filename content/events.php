@@ -5,7 +5,15 @@ use i330p2\template\StaticPage;
 // Make the events div first and store the HTML in a variable
 $eventHtml = "";
 for ($i = 1; $i <= 6; $i++) {
-	$eventHtml += '<div class="event"></div>';
+	$eventHtml .= ' <div class="event">
+                        <div class="event-image">
+                            <img src="http://static.carnivalcloud.com/~/media/Images/explore/onboard/outdoor/skyride-2.ashx" alt="event image"/>
+                        </div>
+                        <div class="event-text">
+                            <h1>Title</h1>
+                            <p>Description</p>
+                        </div>
+                    </div>';
 }
 
 // Php automatically spits out what's in the variable when it's between quotes
@@ -14,9 +22,9 @@ for ($i = 1; $i <= 6; $i++) {
 // $body = "This is text before \r\n $eventHtml \r\n this is text after";
 // Remember, \r\n means "newline"
 $body = <<<HTML
-	This is text before
+	
 	$eventHtml
-	This is text after
+	
 HTML;
 
 StaticPage::createContent()
