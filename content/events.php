@@ -43,7 +43,7 @@ $body = <<<HTML
 <?-- Link should make the categories div appear -->	
 <a href="#">
 	<div id="event-categories-button">
-		Categories
+		<label for="event-categories-controller">Categories</label>
 	</div>
 </a>
 
