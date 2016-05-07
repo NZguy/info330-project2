@@ -41,12 +41,36 @@ body{
 	border: none;
 }
 
-#event-categories{
+#event-categories-button{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 	margin: 20px;
 	float: right;
-	padding: 1px 4px;
-	width: 116px;
+	padding: 1px 0;
+	width: 124px;
+	text-align: center;
+	color: black;
+}
+
+#event-categories-container{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	margin: 20px;
+	clear: both;
+}
+
+.event-category{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	width: 124px;
+	margin: 18px;
+	float: left;
+	text-align: center;
+}
+
+#event-filter-button{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	width: 284px;
+	margin: 18px;
+	float: left;
+	text-align: center;
 }
 
 .event{
@@ -65,11 +89,7 @@ body{
 	height: 100%;
 }
 
-.event-text{
-
-}
-
-.event-text h2{
+h2{
 	font-size: 18px;
 	margin: 5px 0 0 5px;
 	color: #0a407d;

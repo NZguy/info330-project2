@@ -38,7 +38,7 @@ class StaticPage extends Content{
 	</div>
 	<ul id="global-sidebar-links">
 		<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-		<li><a href="/activities-and-events"><i class="fa fa-users"></i>Activities/Events</a></li>
+		<li><a href="/events"><i class="fa fa-users"></i>Events</a></li>
 		<li><a href="/shipspace"><i class="fa fa-ship"></i>ShipSpace</a></li>
 		<li><a href="/help"><i class="fa fa-exclamation-triangle"></i>Help</a></li>
 		<li><a href="/settings"><i class="fa fa-cog"></i>Settings</a></li>

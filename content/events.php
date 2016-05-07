@@ -40,10 +40,22 @@ $body = <<<HTML
 	
 <?-- Link should make the categories div appear -->	
 <a href="#">
-	<div id="event-categories">
+	<div id="event-categories-button">
 		Categories
 	</div>
 </a>
+
+<div id="event-categories-container" class="close">
+	<h2>Categories</h2>
+	<div class="event-category">All</div>
+	<div class="event-category">Adults</div>
+	<div class="event-category">Kids</div>
+	<div class="event-category">Singles</div>
+	<div class="event-category">Families</div>
+	<div class="event-category">Everyone</div>
+	<div id="event-filter-button">Additional Filters
+	</div>
+</div>
 	
 $eventHtml
 	
