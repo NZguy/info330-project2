@@ -12,15 +12,16 @@ $eventContents = array(
 // Make the events div first and store the HTML in a variable
 $eventHtml = "";
 for ($i = 0; $i <= 3; $i++) {
-	$eventHtml .= ' <div class="event">
-                        <div class="event-image">
-                            <img src="'.$eventContents[$i][0].'" alt="event image"/>
-                        </div>
-                        <div class="event-text">
-                            <h2>'.$eventContents[$i][1].'</h2>
-                            <p>'.$eventContents[$i][2].'</p>
-                        </div>
-                    </div>';
+	$eventHtml .= ' 
+ <div class="event">
+	<div class="event-image">
+		<img src="'.$eventContents[$i][0].'" alt="event image"/>
+	</div>
+	<div class="event-text">
+		<h2>'.$eventContents[$i][1].'</h2>
+		<p>'.$eventContents[$i][2].'</p>
+	</div>
+</div>';
 }
 
 // Php automatically spits out what's in the variable when it's between quotes
@@ -29,8 +30,22 @@ for ($i = 0; $i <= 3; $i++) {
 // $body = "This is text before \r\n $eventHtml \r\n this is text after";
 // Remember, \r\n means "newline"
 $body = <<<HTML
+
+<select id="event-order">
+	<option>Trending</option>
+	<option>Top</option>
+	<option>New</option>
+	<option>Coming up</option>
+</select>
 	
-	$eventHtml
+<?-- Link should make the categories div appear -->	
+<a href="#">
+	<div id="event-categories">
+		Categories
+	</div>
+</a>
+	
+$eventHtml
 	
 HTML;
 
