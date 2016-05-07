@@ -18,7 +18,7 @@ for ($i = 0; $i <= 3; $i++) {
                         </div>
                         <div class="event-text">
                             <h2>'.$eventContents[$i][1].'</h2>
-                            <p>"'.$eventContents[$i][2].'"</p>
+                            <p>'.$eventContents[$i][2].'</p>
                         </div>
                     </div>';
 }
