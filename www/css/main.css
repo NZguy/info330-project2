@@ -53,13 +53,13 @@ html, body {
 }
 
 .event-text h1{
-	font-size: 18pt;
+	font-size: 18px;
 	margin: 5px 0 0 5px;
 	color: #0a407d;
 }
 
 .event-text p{
-	font-size: 14pt;
+	font-size: 14px;
 	margin: 0 0 0 5px;
 	color: #555;
 }
