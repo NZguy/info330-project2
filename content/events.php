@@ -47,17 +47,28 @@ $body = <<<HTML
 	</div>
 </a>
 
-<div id="event-categories-container" class="close">
+<input type="checkbox" id="event-categories-controller" /> 
+
+<div id="event-categories-container">
 	<h2>Categories</h2>
-	<div class="event-category">All</div>
-	<div class="event-category">Adults</div>
-	<div class="event-category">Kids</div>
-	<div class="event-category">Singles</div>
-	<div class="event-category">Families</div>
-	<div class="event-category">Everyone</div>
+	<div class="event-category"><label for="event-category-a">All</label></div>
+	<div class="event-category"><label for="event-category-b">Adults</label></div>
+	<div class="event-category"><label for="event-category-c">Kids</label></div>
+	<div class="event-category"><label for="event-category-d">Singles</label></div>
+	<div class="event-category"><label for="event-category-e">Families</label></div>
+	<div class="event-category"><label for="event-category-f">Everyone</label></div>
 	<div id="event-filter-button">Additional Filters
 	</div>
 </div>
+
+<form id="event-category-radios">
+	<input type="radio" name="category" id="event-category-a" />
+	<input type="radio" name="category" id="event-category-b" />
+	<input type="radio" name="category" id="event-category-c" />
+	<input type="radio" name="category" id="event-category-d" />
+	<input type="radio" name="category" id="event-category-e" />
+	<input type="radio" name="category" id="event-category-f" />
+</form>
 	
 $eventHtml
 	

@@ -48,6 +48,19 @@ body{
 	width: 124px;
 	text-align: center;
 	color: black;
+	font-size: 20px;
+}
+
+#event-categories-controller{
+	display: none;
+}
+
+#event-categories-controller:not(:checked) ~ #event-categories-container{
+	display: none;
+}
+
+#event-categories-controller:checked ~ #event-categories-container{
+	display: inline-block;
 }
 
 #event-categories-container{
@@ -64,12 +77,27 @@ body{
 	text-align: center;
 }
 
+.event-category label{
+	display: block;
+	width: 100%;
+	background-color: white;
+}
+
 #event-filter-button{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 	width: 284px;
 	margin: 18px;
 	float: left;
 	text-align: center;
+}
+
+#event-category-radios{
+
+}
+
+input[type="radio"]:checked ~ label{
+	background-color: grey;
+	color: white;
 }
 
 .event{
