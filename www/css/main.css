@@ -91,13 +91,14 @@ body{
 	text-align: center;
 }
 
-#event-category-radios{
-
+.event-category input[type="radio"]{
+	/* display: none; */
 }
 
-input[type="radio"]:checked ~ label{
+.event-category input[type="radio"]:checked ~ label{
 	background-color: grey;
 	color: white;
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
 }
 
 .event{
