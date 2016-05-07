@@ -27,7 +27,7 @@ class StaticPage extends Content{
 </head>
 <body>
 
-<input type="checkbox" class="k-controller" id="global-sidebar-controller" checked="checked" />
+<input type="checkbox" class="k-controller" id="global-sidebar-controller" />
 <div id="global-sidebar">
 	<div id="global-sidebar-header">
 		<div id="global-sidebar-header-avatar"><img src="https://s3-us-west-1.amazonaws.com/fm-msc/i330/user-avatar.gif" alt="Profile Picture" /></div>
