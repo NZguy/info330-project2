@@ -23,6 +23,10 @@ h1.global, h2.global, h3.global, h4.global, h5.global, h6.global {
 .k-container {
   padding: 0 24px; }
 
+.k-aligner, .k-aligned {
+  display: inline-block;
+  vertical-align: middle; }
+
 #global-nav,
 #global-nav-push {
   height: 60px; }
@@ -114,5 +118,89 @@ h1.global, h2.global, h3.global, h4.global, h5.global, h6.global {
   padding: 20px 24px;
   color: #CCC;
   font-size: 10px; }
+
+#home-scoreboard {
+  text-align: center; }
+
+#home-scoreboard-settings {
+  text-align: right;
+  height: 0;
+  overflow: visible;
+  font-weight: bold;
+  display: block; }
+  #home-scoreboard-settings i {
+    cursor: pointer;
+    color: #CCC;
+    padding: 12px 24px;
+    font-size: 20px; }
+
+#home-scoreboard-header {
+  font-size: 72px;
+  font-weight: bold;
+  padding: 32px 24px;
+  border-bottom: 1px dashed #CCC; }
+  #home-scoreboard-header span {
+    font-size: 12px;
+    font-weight: normal; }
+
+#home-scoreboard-trio-container {
+  font-size: 0;
+  border-bottom: 1px dashed #CCC; }
+
+.home-scoreboard-trio {
+  box-sizing: border-box;
+  border-left: 1px dashed #CCC;
+  width: 33.3333%;
+  display: inline-block;
+  vertical-align: top;
+  height: 110px;
+  font-size: 0; }
+  .home-scoreboard-trio .k-aligner {
+    height: 110px; }
+  .home-scoreboard-trio .k-aligned {
+    font-size: 16px; }
+  .home-scoreboard-trio .k-top {
+    font-weight: bold;
+    font-size: 30px; }
+  .home-scoreboard-trio .k-bottom {
+    font-size: 12px;
+    color: #999; }
+  .home-scoreboard-trio span {
+    font-size: 14px; }
+
+.home-scoreboard-trio:nth-child(1) {
+  border-left: none; }
+
+#home-recent-activities > .k-container > .k-title {
+  font-weight: bold;
+  padding: 20px 0 10px;
+  font-size: 14px; }
+
+.home-activity-element {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 65px;
+  width: 100%; }
+  .home-activity-element .k-left {
+    flex: 0 0 auto;
+    width: 70px;
+    height: 50px; }
+    .home-activity-element .k-left img {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px; }
+  .home-activity-element .k-right {
+    flex: 0 0 auto;
+    color: #CCC;
+    font-weight: bold;
+    line-height: 65px;
+    font-size: 22px; }
+  .home-activity-element .k-center {
+    flex: 1 1 auto;
+    font-size: 14px; }
+  .home-activity-element .k-title {
+    font-weight: bold; }
 
 /*# sourceMappingURL=global.css.map */
