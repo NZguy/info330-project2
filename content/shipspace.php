@@ -3,15 +3,16 @@ require_once PHP_ROOT . '/i330p2/Setup.php';
 use i330p2\template\StaticPage;
 
 $storyContents = array(
+    array("http://carnival-news.com/wp-content/uploads/2011/05/Glorysea2.jpg", "3rd Place", "Achieved 3rd place in the competition for points."),
     array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/outdoor/skyride-2.ashx", "SkyRide", "SkyRide is a bit like riding a bike you’ll never forget it."),
-    array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/cruise-entertainment/imax-1.ashx", "IMAX", "Catching a flick on your Carnival cruise just became a big, big deal."),
-    array("http://static.carnivalcloud.com/~/media/Images/explore/fun-activities/havana-bar-1.ashx", "Havana Bar", "Step into the Havana Bar and enjoy an authentically Cuban experience as you cruise."),
-    array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/outdoor/serenity-1.ashx", "Adult Only Retreat", "I should change this content")
+    array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/outdoor/twister-waterslide-3.ashx", "Slid", "Took a ride down the legendary twister water slide."),
+    array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/cruise-entertainment/carnival-seaside-theater-1.ashx", "Seaside Theatre", "Watched Star Wars Episode VIII at the carnival seaside theatre"),
+    array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/spa-fitness/jogging-track-1.ashx", "Went Jogging", "Went for an early morning open air jog around the deck.")
 );
 
 // Make the events div first and store the HTML in a variable
 $storyHtml = "";
-for ($i = 0; $i <= 3; $i++) {
+for ($i = 0; $i <= 4; $i++) {
     $storyHtml .= '
 <div class="shipspace-story">
     <div class="shipspace-story-image"><img src="'.$storyContents[$i][0].'" alt="story image" /></div>
@@ -37,7 +38,7 @@ $body = <<<HTML
     
     <a href="/connect"><div id="shipspace-connect-button">Connect Accounts</div></a>
     
-    $storyHtml;
+    $storyHtml
     
     <input type="checkbox" id="shipspace-story-share-button" /> 
     
