@@ -37,15 +37,20 @@ $body = <<<HTML
     
     <h2>Interests</h2>
     <form id="filter-interests">
-        <div><label><input type="checkbox" />Sports</label></div>
-        <div><label><input type="checkbox" />Relaxing</label></div>
-        <div><label><input type="checkbox" />Relaxing</label></div>
-        <div><label><input type="checkbox" />Relaxing</label></div>
-        <div><label><input type="checkbox" />Relaxing</label></div>
-        <div><label><input type="checkbox" />Relaxing</label></div>
-        <div><label><input type="checkbox" />Relaxing</label></div>
-        <div><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Sports</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
     </form>
+    
+    
+		<a href="/events"><div class="filter-button">Cancel</div></a>
+		<a href="/events"><div class="filter-button">Accept</div></a>
+    
 <div/>
 	
 HTML;
