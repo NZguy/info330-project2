@@ -4,7 +4,15 @@ use i330p2\template\StaticPage;
 
 $body = <<<HTML
 
-hi
+<div id="shipspace-content">
+    <div id="shipspace-profile-pic-container">
+        <img src="https://s3-us-west-1.amazonaws.com/fm-msc/i330/user-avatar.gif" alt="Profile Picture" />
+    </div>
+    
+    <h2>Duncan Andrew</h2>
+    
+    <a href="/connect"><div id="shipspace-connect-button">Connect Accounts</div></a>
+</div>
 
 HTML;
 
