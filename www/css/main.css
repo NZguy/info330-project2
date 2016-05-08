@@ -144,3 +144,39 @@ body{
 	text-align: center;
 	color: black;
 }
+
+#shipspace-content{
+
+}
+
+#shipspace-content h2{
+	margin: 20px auto 10px;
+	font-size: 18px;
+	color: #0a407d;
+	text-align: center;
+}
+
+#shipspace-content a{
+	text-decoration: none;
+}
+
+#shipspace-profile-pic-container{
+	width: 60%;
+	margin: 20px auto;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#shipspace-profile-pic-container img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#shipspace-connect-button{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	width: 50%;
+	margin: 0 25%;
+	text-align: center;
+	color: black;
+}
