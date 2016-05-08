@@ -82,6 +82,8 @@ $global-sidebar-header-avatar-size: 55px;
 	z-index: 98;
 	font-size: 0;
 	padding-right: $content-padding;
+	overflow: hidden;
+	white-space: nowrap;
 
 	> div, > label {
 		display: inline-block;

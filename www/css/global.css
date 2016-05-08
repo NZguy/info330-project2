@@ -84,7 +84,9 @@ h1.global, h2.global, h3.global, h4.global, h5.global, h6.global {
   background-color: #B61B38;
   z-index: 98;
   font-size: 0;
-  padding-right: 24px; }
+  padding-right: 24px;
+  overflow: hidden;
+  white-space: nowrap; }
   #global-nav > div, #global-nav > label {
     display: inline-block;
     font-size: 18px;
