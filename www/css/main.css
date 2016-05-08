@@ -146,13 +146,17 @@ body{
 }
 
 #shipspace-content{
-
+	overflow: auto;
 }
 
 #shipspace-content h2{
-	margin: 20px auto 10px;
 	font-size: 18px;
 	color: #0a407d;
+}
+
+#shipspace-content > h2{
+	margin: 20px auto 10px;
+
 	text-align: center;
 }
 
@@ -179,4 +183,140 @@ body{
 	margin: 0 25%;
 	text-align: center;
 	color: black;
+}
+
+.shipspace-story{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	margin: 30px 20px;
+	clear: both;
+	height: 100px;
+	position: relative;
+}
+
+.shipspace-story-image{
+	float: left;
+	width: 30%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.shipspace-story-image img{
+	height: 100%;
+	width: auto;
+	display: block;
+}
+
+.shipspace-story-text{
+
+	margin: 5px 5px 5px 100px;
+}
+
+.shipspace-story h2{
+	margin: 0;
+}
+
+.shipspace-story p{
+	font-size: 14px;
+	margin: 0;
+	color: #555;
+}
+
+.shipspace-story-share{
+	text-align: center;
+	height: 46px;
+	width: 46px;
+	border-radius: 50%;
+	overflow: hidden;
+	color: white;
+	background-color: #0a407d;
+	position: absolute;
+	bottom: -28px;
+	right: 4px;
+	margin: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.shipspace-story-share i{
+	margin: 7px 2px 0 0;
+}
+
+#shipspace-story-share-button{
+	display: none;
+}
+
+#shipspace-story-share-close{
+	display: none;
+	width: 100%;
+	height: 70vh;
+	position: fixed;
+	top: 0;
+	background-color: grey;
+	opacity: 0.4;
+}
+
+#shipspace-story-share-button:checked ~ #shipspace-share-container,
+#shipspace-story-share-button:checked ~ #shipspace-story-share-close{
+	display: block;
+}
+
+#shipspace-share-container{
+	display: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	margin: 0;
+	clear: both;
+	width: 100%;
+	height: 30vh;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+}
+
+#shipspace-share-container h2{
+	margin: 20px;
+}
+
+#shipspace-share-container-soc{
+	margin: 20px;
+}
+
+#shipspace-share-container-soc i{
+	margin: 11px;
+}
+
+/* Social Media Colors */
+#shipspace-share-container-soc .fa-facebook-square{
+	color: #3B5998;
+}
+#shipspace-share-container-soc .fa-tumblr-square{
+	color: #36465D;
+}
+#shipspace-share-container-soc .fa-twitter-square{
+	color: #00ACED;
+}
+#shipspace-share-container-soc .fa-snapchat-square{
+	color: #fffc00;
+}
+#shipspace-share-container-soc .fa-pinterest-square{
+	color: #cb2027;
+}
+#shipspace-share-container-soc .fa-vimeo-square{
+	color: #4EBBFF;
+}
+#shipspace-share-container-soc .fa-youtube-square{
+	color: #bb0000;
+}
+#shipspace-share-container-soc .fa-pied-piper-pp{
+	color: #2E9F48;
+}
+#shipspace-share-container-soc .fa-linkdin-square{
+	color: #007bb5;
+}
+#shipspace-share-container-soc .fa-google-plus-square{
+	color: #dd4b39;
+}
+#shipspace-share-container-soc .fa-git-square{
+	color: #333333;
+}
+#shipspace-share-container-soc .fa-bitbucket-square{
+	color: #205081;
 }
