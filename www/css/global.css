@@ -3,15 +3,16 @@
   src: url("https://s3-us-west-1.amazonaws.com/fm-msc/i330/tempostd-heavycondensed-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-html, body {
+html, body,
+.k-select {
   font-family: 'Open Sans', sans-serif; }
 
 html, body,
-ul, ol, li {
+ul, ol, li, select, option {
   padding: 0;
   margin: 0; }
 
-h1.global, h2.global, h3.global, h4.global, h5.global, h6.global {
+.k-global-title, .k-page-header .k-title, .k-page-header .k-alt-title {
   font-family: tempo, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -27,8 +28,56 @@ h1.global, h2.global, h3.global, h4.global, h5.global, h6.global {
   display: inline-block;
   vertical-align: middle; }
 
+.k-spacer.k-spacer-content {
+  height: 24px; }
+
+.k-notification {
+  background-color: #68b004;
+  padding: 6px 0; }
+
+.k-page-header {
+  padding: 24px 0; }
+  .k-page-header .k-title {
+    font-size: 28px;
+    color: #014E8F; }
+  .k-page-header .k-alt-title {
+    font-size: 28px;
+    color: #B61B38; }
+
+.k-button {
+  text-decoration: none;
+  border: 1px solid;
+  color: #000; }
+  .k-button.k-button-full {
+    border: 1px solid #014E8F;
+    display: block;
+    text-align: center;
+    padding: 6px 24px;
+    margin: 12px 0; }
+  .k-button.k-button-active {
+    background-color: #014E8F;
+    color: #FFF; }
+  .k-button:link, .k-button:visited {
+    border-color: #014E8F; }
+  .k-button:hover, .k-button:active, .k-button:focus {
+    border-color: #B61B38; }
+
+.k-question-container {
+  padding-top: 36px; }
+
+.k-question {
+  font-size: 14px; }
+
+.k-select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #014E8F;
+  padding: 8px 0 4px; }
+  .k-select .k-default {
+    color: #CCC; }
+
 #global-nav,
-#global-nav-push {
+.global-nav-push {
   height: 60px; }
 
 #global-sidebar-controller:not(:checked) + #global-sidebar {

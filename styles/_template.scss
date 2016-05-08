@@ -10,23 +10,22 @@
 	-webkit-transition: $params;
 }
 
-html, body {
+html, body,
+.k-select {
 	font-family: 'Open Sans', sans-serif;
 }
 
 html, body,
-ul, ol, li {
+ul, ol, li, select, option {
 	padding: 0;
 	margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	&.global {
-		font-family: tempo, sans-serif;
-		font-weight: normal;
-		font-style: normal;
-		text-transform: uppercase;
-	}
+.k-global-title {
+	font-family: tempo, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
 }
 
 .k-controller {
@@ -40,4 +39,71 @@ h1, h2, h3, h4, h5, h6 {
 .k-aligner, .k-aligned {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.k-spacer {
+	&.k-spacer-content {
+		height: $content-padding;
+	}
+}
+.k-notification {
+	background-color: #68b004;
+	padding: 6px 0;
+}
+
+.k-page-header {
+	padding: 24px 0;
+
+	.k-title {
+		@extend .k-global-title;
+		font-size: 28px;
+		color: $color-carnival-blue;
+	}
+	.k-alt-title {
+		@extend .k-global-title;
+		font-size: 28px;
+		color: $color-carnival-red;
+	}
+}
+
+.k-button {
+	text-decoration: none;
+	border: 1px solid;
+	color: #000;
+
+	&.k-button-full {
+		border: 1px solid $color-carnival-blue;
+		display: block;
+		text-align: center;
+		padding: 6px $content-padding;
+		margin: $content-padding/2 0;
+	}
+	&.k-button-active {
+		background-color: $color-carnival-blue;
+		color: #FFF;
+	}
+
+	&:link, &:visited {
+		border-color: $color-carnival-blue;
+	}
+	&:hover, &:active, &:focus {
+		border-color: $color-carnival-red;
+	}
+}
+
+.k-question-container {
+	padding-top: 36px;
+}
+.k-question {
+	font-size: 14px;
+}
+.k-select {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid $color-carnival-blue;
+	padding: 8px 0 4px;
+
+	.k-default {
+		color: #CCC;
+	}
 }

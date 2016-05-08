@@ -1,6 +1,13 @@
 <?php
 require_once PHP_ROOT . '/i330p2/Setup.php';
+use common\session\Session;
+use i330p2\SessionKVs;
 use i330p2\template\StaticPage;
+
+if (!Session::exists(SessionKVs::SURVEY_KEY)) {
+	header("Location: /events/survey-optin");
+	exit;
+}
 
 $eventContents = array(
 	array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/outdoor/skyride-2.ashx", "SkyRide", "SkyRide is a bit like riding a bike — you’ll never forget it."),

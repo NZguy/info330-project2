@@ -53,10 +53,12 @@ class StaticPage extends Content{
 	<label for="global-sidebar-controller"><i class="fa fa-bars"></i></label>
 	<div>{$fields[self::FIELD_TITLE]}</div>
 </div>
-<div id="global-nav-push"></div>
+<div class="global-nav-push"></div>
 
 {$fields[self::FIELD_BODY]}
 
+
+<div class="global-nav-push"></div>
 </body>
 </html>
 HTML;
