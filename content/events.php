@@ -78,7 +78,7 @@ $body = <<<HTML
 		<input type="radio" name="category" id="event-category-f" />
 		<label for="event-category-f">Everyone</label>
 	</div>
-	<a href="/eventfilter"><div id="event-filter-button">Additional Filters</div></a>
+	<a href="/events/advanced-filter"><div id="event-filter-button">Additional Filters</div></a>
 </div>
 
 $eventHtml

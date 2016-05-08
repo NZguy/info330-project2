@@ -12,6 +12,7 @@ if (!is_null($resetParam)) {
 }
 
 $surveyKey = SessionKVs::SURVEY_KEY;
+$connectKey = SessionKVs::CONNECT_KEY;
 
 $body = <<<HTML
 <div class="k-container">
@@ -24,7 +25,9 @@ $resetMessageHtml
 	<div class="k-question-container">
 		<a href="/settings?reset=$surveyKey" class="k-button k-button-full k-button-active">Reset survey completion</a>
 	</div>
-
+	<div class="k-question-container">
+		<a href="/settings?reset=$connectKey" class="k-button k-button-full k-button-active">Reset social connection</a>
+	</div>
 </div>
 HTML;
 

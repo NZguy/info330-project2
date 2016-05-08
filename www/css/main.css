@@ -284,39 +284,39 @@ body{
 }
 
 /* Social Media Colors */
-#shipspace-share-container-soc .fa-facebook-square{
+.fa-facebook-square{
 	color: #3B5998;
 }
-#shipspace-share-container-soc .fa-tumblr-square{
+.fa-tumblr-square{
 	color: #36465D;
 }
-#shipspace-share-container-soc .fa-twitter-square{
+.fa-twitter-square{
 	color: #00ACED;
 }
-#shipspace-share-container-soc .fa-snapchat-square{
+.fa-snapchat-square{
 	color: #fffc00;
 }
-#shipspace-share-container-soc .fa-pinterest-square{
+.fa-pinterest-square{
 	color: #cb2027;
 }
-#shipspace-share-container-soc .fa-vimeo-square{
+.fa-vimeo-square{
 	color: #4EBBFF;
 }
-#shipspace-share-container-soc .fa-youtube-square{
+.fa-youtube-square{
 	color: #bb0000;
 }
-#shipspace-share-container-soc .fa-pied-piper-pp{
+.fa-pied-piper-pp{
 	color: #2E9F48;
 }
-#shipspace-share-container-soc .fa-linkdin-square{
+.fa-linkdin-square{
 	color: #007bb5;
 }
-#shipspace-share-container-soc .fa-google-plus-square{
+.fa-google-plus-square{
 	color: #dd4b39;
 }
-#shipspace-share-container-soc .fa-git-square{
+.fa-git-square{
 	color: #333333;
 }
-#shipspace-share-container-soc .fa-bitbucket-square{
+.fa-bitbucket-square{
 	color: #205081;
 }

@@ -1,6 +1,13 @@
 <?php
 require_once PHP_ROOT . '/i330p2/Setup.php';
+use common\session\Session;
+use i330p2\SessionKVs;
 use i330p2\template\StaticPage;
+
+if (!Session::exists(SessionKVs::CONNECT_KEY)) {
+    header("Location: /shipspace/connect-optin");
+    exit;
+}
 
 $storyContents = array(
     array("http://carnival-news.com/wp-content/uploads/2011/05/Glorysea2.jpg", "3rd Place", "Achieved 3rd place in the competition for points."),
@@ -36,7 +43,7 @@ $body = <<<HTML
     
     <h2>Duncan Andrew</h2>
     
-    <a href="/connect"><div id="shipspace-connect-button">Connect Accounts</div></a>
+    <a href="/shipspace/connect"><div id="shipspace-connect-button">Connect Accounts</div></a>
     
     $storyHtml
     
