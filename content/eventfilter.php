@@ -37,14 +37,14 @@ $body = <<<HTML
     
     <h2>Interests</h2>
     <form id="filter-interests">
-        <label><input type="checkbox" />Sports</label>
-        <label><input type="checkbox" />Relaxing</label>
-        <label><input type="checkbox" />Relaxing</label>
-        <label><input type="checkbox" />Relaxing</label>
-        <label><input type="checkbox" />Relaxing</label>
-        <label><input type="checkbox" />Relaxing</label>
-        <label><input type="checkbox" />Relaxing</label>
-        <label><input type="checkbox" />Relaxing</label>
+        <div><label><input type="checkbox" />Sports</label></div>
+        <div><label><input type="checkbox" />Relaxing</label></div>
+        <div><label><input type="checkbox" />Relaxing</label></div>
+        <div><label><input type="checkbox" />Relaxing</label></div>
+        <div><label><input type="checkbox" />Relaxing</label></div>
+        <div><label><input type="checkbox" />Relaxing</label></div>
+        <div><label><input type="checkbox" />Relaxing</label></div>
+        <div><label><input type="checkbox" />Relaxing</label></div>
     </form>
 <div/>
 	

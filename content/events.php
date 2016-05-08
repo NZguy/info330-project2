@@ -32,14 +32,13 @@ for ($i = 0; $i <= 3; $i++) {
 // $body = "This is text before \r\n $eventHtml \r\n this is text after";
 // Remember, \r\n means "newline"
 $body = <<<HTML
-
 <select id="event-order">
 	<option>Trending</option>
 	<option>Top</option>
 	<option>New</option>
 	<option>Coming up</option>
 </select>
-	
+
 <div id="event-categories-button">
 	<label for="event-categories-controller">Categories</label>
 </div>
