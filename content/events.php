@@ -32,7 +32,7 @@ for ($i = 0; $i <= 3; $i++) {
 }
 
 $eventCategories = [
-	"Kids", "Adults", "Singles", "Partners", "Groups", "Water", "Indoors", "Outdoors"
+	"All", "Kids", "Adults", "Singles", "Partners", "Groups", "Water", "Indoors", "Outdoors"
 ];
 $eventCategoriesHtml = "";
 foreach ($eventCategories as $cat) {

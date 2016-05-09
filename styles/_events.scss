@@ -25,6 +25,7 @@ $category-spacing: 6px;
 	font-size: 0;
 	overflow-x: auto;
 	white-space: nowrap;
+	margin-bottom: 10px;
 
 	.k-aligner {
 		height: 46px;
@@ -37,7 +38,7 @@ $category-spacing: 6px;
 		color: $color-carnival-blue;
 		text-decoration: none;
 		margin: 0 $category-spacing;
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.k-option {
 		border-radius: 500px;
