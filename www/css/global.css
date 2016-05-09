@@ -294,7 +294,7 @@ ul, ol, li, select, option {
   font-size: 14px;
   color: #AAA;
   display: flex;
-  flex-direction: row;}
+  flex-direction: row; }
   .k-events-sortby .k-title {
     flex: 0 0 auto;
     padding-right: 8px; }
@@ -309,7 +309,7 @@ ul, ol, li, select, option {
   font-size: 0;
   overflow-x: auto;
   white-space: nowrap;
-  margin-bottom: 10px;}
+  margin-bottom: 10px; }
   .k-events-categories .k-aligner {
     height: 46px; }
   .k-events-categories > div, .k-events-categories > a {
