@@ -1,3 +1,6 @@
+$carnival-blue: #0A407D;
+$carnival-red: #B61B38;
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
@@ -67,7 +70,7 @@ body{
 }
 
 .event-category input[type="radio"]:checked ~ label{
-  background-color: #0a407d;;
+  background-color: $carnival-blue;
   color: white;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
 }
@@ -91,7 +94,7 @@ body{
 .event-text h2, #event-categories-container h2{
   font-size: 18px;
   margin: 5px 0 0 5px;
-  color: #0a407d;
+  color: $carnival-blue;
 }
 
 .event-text p{
@@ -108,15 +111,17 @@ body{
 #filter-content h2{
   font-size: 18px;
   margin: 30px 0 10px 5px;
-  color: #0a407d;
+  color: $carnival-red;
 }
 
 #filter-content select{
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  margin: 0 20px 0 20px;
+  margin: 0 auto;
+  display: block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
+  border-bottom: 2px solid $carnival-blue;
+  width: 90%;
 }
 
 #filter-interests{
@@ -151,7 +156,7 @@ body{
 
 #shipspace-content h2{
   font-size: 18px;
-  color: #0a407d;
+  color: $carnival-blue;
 }
 
 #shipspace-content > h2{
@@ -228,7 +233,7 @@ body{
   border-radius: 50%;
   overflow: hidden;
   color: white;
-  background-color: #0a407d;
+  background-color: $carnival-blue;
   position: absolute;
   bottom: -28px;
   right: 4px;
@@ -326,7 +331,7 @@ body{
   display: block;
   width: 90%;
   height: 48px;
-  border-bottom: 2px solid #0a407d;
+  border-bottom: 2px solid $carnival-blue;
 }
 
 .connect-social p{
@@ -359,4 +364,14 @@ body{
   border-radius: 500px;
   padding: 4px 16px;
   background-color: #C1C1C1;
+}
+
+.d-page-title{
+  padding: 24px 0 0 0;
+  font-size: 28px;
+  color: $carnival-blue;
+  font-family: tempo, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
 }

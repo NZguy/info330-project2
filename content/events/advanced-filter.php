@@ -9,6 +9,10 @@ use i330p2\template\StaticPage;
 // Remember, \r\n means "newline"
 $body = <<<HTML
 
+<div class="k-container">
+		<div class="d-page-title">Advanced Filter</div>
+</div>
+
 <div id="filter-content">
     <h2>Age Group</h2>
     <select id="filter-age">
@@ -39,23 +43,23 @@ $body = <<<HTML
     <form id="filter-interests">
         <div class="filter-interest"><label><input type="checkbox" />Sports</label></div>
         <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
-        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
-        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
-        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
-        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
-        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
-        <div class="filter-interest"><label><input type="checkbox" />Relaxing</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Water</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Food</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Drink</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Social</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Active</label></div>
+        <div class="filter-interest"><label><input type="checkbox" />Sit Down</label></div>
     </form>
     
     
-		<a href="/events"><div class="filter-button">Cancel</div></a>
-		<a href="/events"><div class="filter-button">Accept</div></a>
+		<a href="/events?category=All"><div class="filter-button">Cancel</div></a>
+		<a href="/events?category=All"><div class="filter-button">Accept</div></a>
     
 <div/>
 	
 HTML;
 
 StaticPage::createContent()
-    ->with(StaticPage::FIELD_TITLE, "Events")
+    ->with(StaticPage::FIELD_TITLE, "Advanced Filter")
     ->with(StaticPage::FIELD_BODY, $body)
     ->render();
