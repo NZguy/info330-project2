@@ -9,6 +9,9 @@ if (!Session::exists(SessionKVs::SURVEY_KEY)) {
 	exit;
 }
 
+$currentCategory = $_GET["category"];
+$selectedClass = "";
+
 $eventContents = array(
 	array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/outdoor/skyride-2.ashx", "SkyRide", "SkyRide is a bit like riding a bike — you’ll never forget it."),
 	array("http://static.carnivalcloud.com/~/media/Images/explore/onboard/cruise-entertainment/imax-1.ashx", "IMAX", "Catching a flick on your Carnival cruise just became a big, big deal."),
@@ -36,7 +39,12 @@ $eventCategories = [
 ];
 $eventCategoriesHtml = "";
 foreach ($eventCategories as $cat) {
-	$eventCategoriesHtml .= '<a class="k-option" href="?category='.$cat.'">'.$cat.'</a>';
+	if($cat == $currentCategory){
+		$selectedClass = "d-selected-option";
+	}else{
+		$selectedClass = "k-option";
+	}
+	$eventCategoriesHtml .= '<a class="'.$selectedClass.'" href="?category='.$cat.'">'.$cat.'</a>';
 }
 
 // Php automatically spits out what's in the variable when it's between quotes
