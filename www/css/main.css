@@ -354,3 +354,9 @@ body{
 .connect-social-button:checked ~ .social-disconnect{
 	display: none;
 }
+
+.d-selected-option{
+	border-radius: 500px;
+	padding: 4px 16px;
+	background-color: #C1C1C1;
+}

@@ -295,7 +295,7 @@ ul, ol, li, select, option {
   font-size: 14px;
   color: #AAA;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;}
   .k-events-sortby .k-title {
     flex: 0 0 auto;
     padding-right: 8px; }
@@ -309,7 +309,8 @@ ul, ol, li, select, option {
 .k-events-categories {
   font-size: 0;
   overflow-x: auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-bottom: 10px;}
   .k-events-categories .k-aligner {
     height: 46px; }
   .k-events-categories > div, .k-events-categories > a {
@@ -319,7 +320,7 @@ ul, ol, li, select, option {
     color: #014E8F;
     text-decoration: none;
     margin: 0 6px;
-    font-size: 14px; }
+    font-size: 18px; }
   .k-events-categories .k-option {
     border-radius: 500px;
     padding: 4px 16px;
