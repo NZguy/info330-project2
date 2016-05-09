@@ -24,8 +24,6 @@ $resetMessageHtml
 <div class="k-container">
 	<div class="k-question-container">
 		<a href="/settings?reset=$surveyKey" class="k-button k-button-full k-button-active">Reset survey completion</a>
-	</div>
-	<div class="k-question-container">
 		<a href="/settings?reset=$connectKey" class="k-button k-button-full k-button-active">Reset social connection</a>
 	</div>
 </div>
