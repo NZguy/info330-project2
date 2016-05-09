@@ -64,6 +64,11 @@ ul, ol, li, select, option {
 		font-size: 28px;
 		color: $color-carnival-red;
 	}
+	.k-back {
+		text-decoration: none;
+		color: $color-carnival-red;
+		font-size: 14px;
+	}
 }
 
 .k-button {
@@ -122,3 +127,13 @@ ul, ol, li, select, option {
 	color: #FFF;
 }
 
+.k-call {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 8px 0;
+	background-color: $color-carnival-blue;
+	color: #FFFFFF;
+	margin-top: 6px;
+	border-radius: 500px;
+}
