@@ -96,7 +96,7 @@ $body = <<<HTML
 	
 	
 	<div class="k-spacer k-spacer-content"></div>
-	<a href="/events" class="k-button k-button-full k-button-active">Submit</a>
+	<a href="/events?category=All" class="k-button k-button-full k-button-active">Submit</a>
 </div>
 HTML;
 

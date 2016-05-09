@@ -17,7 +17,7 @@ $body = <<<HTML
 	never ever sell or share your answers with any 3rd parties (it'll be our little secret).</div>
 	<div class="k-spacer k-spacer-content"></div>
 	<a href="/events/survey" class="k-button k-button-full k-button-active">Yeah! Lets do it!</a>
-	<a href="/events" class="k-button k-button-full">I'd rather not...</a>
+	<a href="/events?category=All" class="k-button k-button-full">I'd rather not...</a>
 </div>
 HTML;
 
