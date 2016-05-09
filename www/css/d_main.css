@@ -134,7 +134,8 @@ body {
   color: #0A407D; }
 
 #shipspace-content > h2 {
-  margin: 20px auto 10px;
+  font-size: 28px;
+  margin: 14px auto 10px;
   text-align: center; }
 
 #shipspace-content a {
@@ -152,11 +153,11 @@ body {
   display: block; }
 
 #shipspace-connect-button {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   width: 50%;
   margin: 0 25%;
   text-align: center;
-  color: black; }
+  color: black;
+  background-color: #F3F3F3; }
 
 .shipspace-story {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
@@ -167,7 +168,7 @@ body {
 
 .shipspace-story-image {
   float: left;
-  width: 30%;
+  width: 96px;
   height: 100%;
   overflow: hidden; }
 
@@ -277,6 +278,9 @@ body {
 .fa-bitbucket-square {
   color: #205081; }
 
+.fa-plus-square {
+  color: #555555; }
+
 .connect-social {
   margin: 15px auto 15px auto;
   display: block;
@@ -286,8 +290,9 @@ body {
 
 .connect-social p {
   float: left;
-  font-size: 36px;
-  margin: 0; }
+  font-size: 28px;
+  margin: 10px 0 0 0;
+  color: #555555; }
 
 .social-connect, .social-disconnect {
   float: right; }

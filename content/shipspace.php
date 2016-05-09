@@ -74,6 +74,6 @@ $body = <<<HTML
 HTML;
 
 StaticPage::createContent()
-    ->with(StaticPage::FIELD_TITLE, "Home")
+    ->with(StaticPage::FIELD_TITLE, "ShipSpace")
     ->with(StaticPage::FIELD_BODY, $body)
     ->render();
