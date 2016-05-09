@@ -12,7 +12,7 @@ ul, ol, li, select, option {
   padding: 0;
   margin: 0; }
 
-.k-global-title, .k-page-header > .k-title, .k-page-header .k-alt-title {
+.k-global-title, .k-page-header > .k-title, .k-page-header .k-alt-title, .k-event-banner .k-title {
   font-family: tempo, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -55,7 +55,8 @@ ul, ol, li, select, option {
     display: block;
     text-align: center;
     padding: 6px 24px;
-    margin: 12px 0; }
+    margin: 12px 0;
+    background-color: #F3F3F3; }
   .k-button.k-button-danger {
     background-color: #014E8F;
     color: #FFF; }
@@ -325,5 +326,63 @@ ul, ol, li, select, option {
     background-color: #F3F3F3; }
   .k-events-categories .k-padding {
     width: 18px; }
+
+.k-event {
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  display: block;
+  text-decoration: none;
+  color: #014E8F; }
+  .k-event .k-event-text {
+    font-size: 14px;
+    padding: 4px; }
+  .k-event .k-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #B61B38; }
+  .k-event .k-event-image > img {
+    display: block;
+    width: 100%;
+    height: 120px; }
+
+.k-event-banner img {
+  width: 100%;
+  height: 200px;
+  display: block; }
+.k-event-banner .k-container {
+  font-size: 14px; }
+.k-event-banner .k-title {
+  padding-top: 10px;
+  font-size: 32px; }
+.k-event-banner .k-spacer.k-spacer-button {
+  height: 8px; }
+.k-event-banner .k-button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 16px;
+  margin-right: 5px; }
+.k-event-banner .k-button-reserve {
+  background-color: #00c500; }
+.k-event-banner .k-button-share {
+  background-color: #014E8F;
+  color: #FFF; }
+
+.k-title.k-event-subtitle {
+  font-weight: bold; }
+
+.k-event-facts {
+  padding: 8px 0; }
+  .k-event-facts > .k-container > .k-title {
+    padding-bottom: 8px; }
+  .k-event-facts .k-fact {
+    font-size: 14px; }
+    .k-event-facts .k-fact .k-title {
+      font-weight: bold; }
+
+.k-event-fun-facts {
+  font-size: 14px;
+  list-style: none; }
+  .k-event-fun-facts li {
+    padding-bottom: 8px; }
 
 /*# sourceMappingURL=global.css.map */
