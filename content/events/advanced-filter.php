@@ -27,7 +27,8 @@ $body = <<<HTML
         <option>Solo (1)</option>
         <option>Couple (2)</option>
         <option>Family</option>
-        <option>etc idk</option>
+        <option>Group (4+)</option>
+        <option>Large Group (6+)</option>
     </select>
     
     <h2>Time</h2>

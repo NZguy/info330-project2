@@ -99,7 +99,8 @@ body {
   font-size: 18px;
   border: none;
   border-bottom: 2px solid #0A407D;
-  width: 90%; }
+  width: 90%;
+  background-color: white; }
 
 #filter-interests {
   overflow: auto; }
@@ -107,7 +108,8 @@ body {
 .filter-interest {
   width: 32%;
   margin: 1px 9%;
-  float: left; }
+  float: left;
+  font-size: 18px; }
 
 #filter-button-area {
   margin: 20px auto;
@@ -116,12 +118,13 @@ body {
   padding: 6px 0; }
 
 .filter-button {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   width: 40%;
-  margin: 20px 5%;
+  margin: 30px 5% 60px 5%;
   float: left;
   text-align: center;
-  color: black; }
+  color: black;
+  background-color: #F3F3F3;
+  font-size: 22px; }
 
 #shipspace-content {
   overflow: auto; }
