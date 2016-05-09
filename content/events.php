@@ -20,7 +20,6 @@ $eventContents = array(
 $eventHtml = "";
 for ($i = 0; $i <= 3; $i++) {
 	$eventHtml .= ' 
-
  <div class="event">
 	<div class="event-image">
 		<img src="'.$eventContents[$i][0].'" alt="event image"/>
@@ -30,7 +29,14 @@ for ($i = 0; $i <= 3; $i++) {
 		<p>'.$eventContents[$i][2].'</p>
 	</div>
 </div>';
+}
 
+$eventCategories = [
+	"Kids", "Adults", "Singles", "Partners", "Groups", "Water", "Indoors", "Outdoors"
+];
+$eventCategoriesHtml = "";
+foreach ($eventCategories as $cat) {
+	$eventCategoriesHtml .= '<a class="k-option" href="?category='.$cat.'">'.$cat.'</a>';
 }
 
 // Php automatically spits out what's in the variable when it's between quotes
@@ -39,53 +45,35 @@ for ($i = 0; $i <= 3; $i++) {
 // $body = "This is text before \r\n $eventHtml \r\n this is text after";
 // Remember, \r\n means "newline"
 $body = <<<HTML
-<select id="event-order">
-	<option>Trending</option>
-	<option>Top</option>
-	<option>New</option>
-	<option>Coming up</option>
-</select>
-
-<div id="event-categories-button">
-	<label for="event-categories-controller">Categories</label>
+<div class="k-container">
+	<div class="k-page-header">
+		<div class="k-title">Events &amp; Activities</div>
+	</div>
 </div>
-
-<input type="checkbox" id="event-categories-controller" /> 
-
-<div id="event-categories-container">
-	<h2>Categories</h2>
-	<div class="event-category">
-		<input type="radio" name="category" id="event-category-a" checked />
-		<label for="event-category-a">All</label>
+<div class="k-events-categories">
+	<div class="k-aligner"></div>
+	<div class="k-padding"></div>
+	$eventCategoriesHtml
+	<a href="/events/advanced-filter">More Filters...</a>
+	<div class="k-padding"></div>
+</div>
+<div class="k-container">
+	<div class="k-events-sortby">
+		<div class="k-title">Sort By: </div>
+		<select class="k-inline-select">
+			<option>Trending</option>
+			<option>Top</option>
+			<option>New</option>
+			<option>Coming Up</option>
+		</select>
 	</div>
-	<div class="event-category">
-		<input type="radio" name="category" id="event-category-b" />
-		<label for="event-category-b">Adults</label>
-	</div>
-	<div class="event-category">
-		<input type="radio" name="category" id="event-category-c" />
-		<label for="event-category-c">Kids</label>
-	</div>
-	<div class="event-category">
-		<input type="radio" name="category" id="event-category-d" />
-		<label for="event-category-d">Singles</label>
-	</div>
-	<div class="event-category">
-		<input type="radio" name="category" id="event-category-e" />
-		<label for="event-category-e">Families</label>	
-	</div>
-	<div class="event-category">	
-		<input type="radio" name="category" id="event-category-f" />
-		<label for="event-category-f">Everyone</label>
-	</div>
-	<a href="/events/advanced-filter"><div id="event-filter-button">Additional Filters</div></a>
 </div>
 
 $eventHtml
-	
+
 HTML;
 
 StaticPage::createContent()
-    ->with(StaticPage::FIELD_TITLE, "Events")
+    ->with(StaticPage::FIELD_TITLE, "Events &amp; Activities")
     ->with(StaticPage::FIELD_BODY, $body)
     ->render();

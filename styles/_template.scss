@@ -54,7 +54,7 @@ ul, ol, li, select, option {
 .k-page-header {
 	padding: 24px 0;
 
-	.k-title {
+	> .k-title {
 		@extend .k-global-title;
 		font-size: 28px;
 		color: $color-carnival-blue;
@@ -114,6 +114,7 @@ ul, ol, li, select, option {
 	border: none;
 	border-bottom: 2px solid $color-carnival-blue;
 	padding: 8px 0 4px;
+	background-color: transparent;
 
 	.k-default {
 		color: #CCC;
@@ -136,4 +137,8 @@ ul, ol, li, select, option {
 	color: #FFFFFF;
 	margin-top: 6px;
 	border-radius: 500px;
+}
+
+.k-well {
+	background-color: #DFDFDF;
 }
