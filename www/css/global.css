@@ -46,17 +46,22 @@ ul, ol, li, select, option {
 
 .k-button {
   text-decoration: none;
-  border: 1px solid;
   color: #000; }
   .k-button.k-button-full {
-    border: 1px solid #014E8F;
     display: block;
     text-align: center;
     padding: 6px 24px;
     margin: 12px 0; }
-  .k-button.k-button-active {
+  .k-button.k-button-danger {
     background-color: #014E8F;
     color: #FFF; }
+  .k-button.k-button-inverse {
+    background-color: #F00;
+    color: #FFF; }
+  .k-button.k-button-table {
+    display: block;
+    border-bottom: 1px dashed #CCC !important;
+    padding: 8px 0; }
   .k-button:link, .k-button:visited {
     border-color: #014E8F; }
   .k-button:hover, .k-button:active, .k-button:focus {
@@ -75,6 +80,12 @@ ul, ol, li, select, option {
   padding: 8px 0 4px; }
   .k-select .k-default {
     color: #CCC; }
+
+.k-danger-block {
+  margin: 0 -12px;
+  background-color: #B61B38;
+  padding: 12px;
+  color: #FFF; }
 
 #global-nav,
 .global-nav-push {
@@ -253,5 +264,9 @@ ul, ol, li, select, option {
     font-size: 14px; }
   .home-activity-element .k-title {
     font-weight: bold; }
+
+.k-help-subtitle {
+  font-weight: bold;
+  padding-bottom: 8px; }
 
 /*# sourceMappingURL=global.css.map */

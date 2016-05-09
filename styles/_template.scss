@@ -68,19 +68,26 @@ ul, ol, li, select, option {
 
 .k-button {
 	text-decoration: none;
-	border: 1px solid;
 	color: #000;
 
 	&.k-button-full {
-		border: 1px solid $color-carnival-blue;
 		display: block;
 		text-align: center;
 		padding: 6px $content-padding;
 		margin: $content-padding/2 0;
 	}
-	&.k-button-active {
+	&.k-button-danger {
 		background-color: $color-carnival-blue;
 		color: #FFF;
+	}
+	&.k-button-inverse {
+		background-color: #F00;
+		color: #FFF;
+	}
+	&.k-button-table {
+		display: block;
+		border-bottom: 1px dashed #CCC !important;
+		padding: 8px 0;
 	}
 
 	&:link, &:visited {
@@ -107,3 +114,11 @@ ul, ol, li, select, option {
 		color: #CCC;
 	}
 }
+
+.k-danger-block {
+	margin: 0 (-$content-padding/2);
+	background-color: $color-carnival-red;
+	padding: $content-padding/2;
+	color: #FFF;
+}
+
