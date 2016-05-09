@@ -23,15 +23,15 @@ $eventContents = array(
 $eventHtml = "";
 for ($i = 0; $i <= 3; $i++) {
 	$eventHtml .= ' 
- <div class="event">
-	<div class="event-image">
+<a href="/events/skyride" class="k-event">
+	<div class="k-event-image">
 		<img src="'.$eventContents[$i][0].'" alt="event image"/>
 	</div>
-	<div class="event-text">
-		<h2>'.$eventContents[$i][1].'</h2>
-		<p>'.$eventContents[$i][2].'</p>
+	<div class="k-event-text">
+		<div class="k-title">'.$eventContents[$i][1].'</div>
+		<div>'.$eventContents[$i][2].'</div>
 	</div>
-</div>';
+</a>';
 }
 
 $eventCategories = [
@@ -76,8 +76,9 @@ $body = <<<HTML
 		</select>
 	</div>
 </div>
-
-$eventHtml
+<div class="k-container">
+	$eventHtml
+</div>
 
 HTML;
 
