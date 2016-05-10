@@ -15,7 +15,7 @@ $body = <<<HTML
 		<div class="k-title">SkyRide</div>
 		<div>SkyRide is a bit like riding a bike — you’ll never forget it.</div>
 		<div class="k-spacer k-spacer-button"></div>
-		<a href="/events" class="k-button k-button-reserve">Reserve</a>
+		<a href="/events?category=All" class="k-button k-button-reserve">Reserve</a>
 		<a href="/shipspace" class="k-button k-button-share">Share</a>
 	</div>
 </div>
